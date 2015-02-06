@@ -34,7 +34,7 @@ If you have something like that in your application you will enjoy VHMode:
 </div>
 ```
 
-```javascipt
+```js
 controller("UserController", ["$scope", "User",
   function($scope, User) {
     User.get().then(function(user) {
@@ -43,7 +43,7 @@ controller("UserController", ["$scope", "User",
 
     $scope.initEdit = function() {
       var user = $scope.user;
-      // used `form` variable for easy reverting on cancel
+      // `form` variable is used for easy reverting on cancel
       $scope.form = { name: user.name, ... };
       $scope.isEditUser = true;
     }
@@ -100,7 +100,7 @@ As you can see handling states of angularjs pages requires a decent amount of ad
 </div>
 ```
 
-```javascipt
+```js
 angular.module('app', ['vh-mode']).
 controller("UserController", ["$scope", "User", "VHMode",
   function($scope, User, VHMode) {
@@ -112,7 +112,7 @@ controller("UserController", ["$scope", "User", "VHMode",
       // callback on `edit` state
       edit: function() {
         var user = $scope.user;
-        // used `form` variable for easy reverting on cancel
+        // `form` variable is used for easy reverting on cancel
         $scope.form = { name: user.name, ... };
       },
       // callback on `changePassword` state
