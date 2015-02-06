@@ -1,4 +1,4 @@
-angular.module('vh-mode').factory("VHMode", function() {
+angular.module('vh-mode', []).factory("VHMode", function() {
   function VHMode(callbacks, after) {
     this.callbacks = callbacks || {};
     this.state = null;
