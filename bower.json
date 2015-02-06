@@ -1,0 +1,23 @@
+{
+  "name": "vh-mode",
+  "version": "0.1.0",
+  "authors": [
+    "Sergey Pchelintsev <mail@sergeyp.me>"
+  ],
+  "description": "A simple state machine for Angularjs",
+  "main": "vh-mode.js",
+  "keywords": [
+    "angularjs",
+    "state",
+    "machine"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/violet-hill/vh-mode",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
